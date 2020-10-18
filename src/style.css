@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'LovelyHome';
+  src: url("./assets/Font/LovelyHome.ttf");
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: roboto;
+}
+
+h5 {
+  font-weight: bolder;
+}
+
+#Logo {
+  font-family: 'LovelyHome', sans-serif;
+  font-size: 45px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+input[type=search] {
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=search]:hover {
+  background-color: #D32626;
+}
+
+.bg-trendy1 {
+  background-color: #79D70F;
+}
+
+.bg-trendy2 {
+  background-color: #D32626;
+}
+
+.bg-trendy3 {
+  background-color: #F5A31A;
+}
+
+.bg-trendy4 {
+  background-color: #EDF4F2;
+}
+
+.jumbotron {
+  padding-bottom: 0;
+}
+
+.carousel-inner img {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  display: block;
+}

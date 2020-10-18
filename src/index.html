@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumah Jajan
+    </title>
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron ">
+            <div class="container-md p-3 my-3">
+                <nav class="navbar navbar-expand-sm bg-trendy1 navbar-dark fixed-top sticky">
+                    <a id="Logo" class="navbar-brand" href="#">Rumah Jajan</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" role="tablist" id="collapsibleNavbar">
+                        <ul class="nav navbar-nav nav-pills ">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#home">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#listJajan">List Jajanan</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#tentang">Tentang Kami</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                            <li class="nav-item">
+
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div id="imgSlide" class="carousel bg-trendy2" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#imgSlide" data-slide-to="0" class="active"></li>
+                    <li data-target="#imgSlide" data-slide-to="1"></li>
+                    <li data-target="#imgSlide" data-slide-to="2"></li>
+                    <li data-target="#imgSlide" data-slide-to="3"></li>
+                    <li data-target="#imgSlide" data-slide-to="4"></li>
+                </ul>
+
+                <br>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/src/assets/Image/dessert.png" alt="Dessert" width="250" height="250">
+                        <div class="carousel-caption">
+                            <h3>Dessert</h3>
+                            <p> Bagian hidangan yang pada umumnya disajikan pada akhir makan malam</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/src/assets/Image/lamb.png" alt="lamb" width="1100" height="500">
+                        <div class="carousel-caption">
+                            <h3>Lamb</h3>
+                            <p>Lamb adalah daging yang dihasilkan dari domba yang diternakkan (spesies Ovis aries)</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/src/assets/Image/seafood.png" alt="Seafood" width="1100" height="500">
+                        <div class="carousel-caption">
+                            <h3>Seafood</h3>
+                            <p>makanan berupa hewan dan tumbuhan laut yang berasal dari laut</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/src/assets/Image/vegetarian.png" alt="Vegetarian" width="1100" height="500">
+                        <div class="carousel-caption">
+                            <h3>Vegetarian</h3>
+                            <p>Menu yang cocok Untuk Kamu yang tidak mengkonsumsi daging</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/src/assets/Image/pasta.png" alt="Pasta" width="1100" height="500">
+                        <div class="carousel-caption">
+                            <h3>Pasta</h3>
+                            <p>Makanan olahan yang digunakan pada masakan Italia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#imgSlide" data-slide="prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+
+                </a>
+                <a class="carousel-control-next" href="#imgSlide" data-slide="next">
+
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container d-flex justify-content-center bg-trendy3 sticky">
+            <hr>
+            <search-bar></search-bar>
+            <hr>
+        </div>
+
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+                <h3>HOME</h3>
+                <p>Perkaya kamus anda tentang Jajanan</p>
+                <p>(----- NEXT PROJECT ----) </p>
+            </div>
+            <div id="listJajan" class="container tab-pane fade"><br>
+                <h3>List Jajanan</h3>
+                <p>Berbagai jenis jajanan dari belahan dunia.</p>
+                <p>(----- NEXT PROJECT ----) </p>
+            </div>
+            <div id="tentang" class="container tab-pane fade"><br>
+                <h3>Tentang Kami</h3>
+                <p>Kami berkomitmen membantu menambah pengetahuan anda tentang jajanan yang ada di dunia</p>
+                <p>(----- NEXT PROJECT ----) </p>
+            </div>
+        </div>
+        </div>
+
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <list-meal></list-meal>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </main>
+    <br>
+    <footer class="bg-trendy4 ">
+        <br>
+        <div class="container">
+            <a id="Logo" class="navbar-brand" href="#">Rumah Jajan</a>
+            <div class="row">
+                <div class="col list-group">
+                    <h5>Rumah Kami</h5>
+                    <a href="#tentang" class="list-group-item-action">
+                        <img src="/src/assets/svg/iconsabout.png">Tentang Kami</a>
+                    <a href="#" class="list-group-item-action">
+                        <img src="/src/assets/svg/iconscontact.png"> Kontak</a>
+                    <a href="#" class="list-group-item-action">
+                        <img src="/src/assets/svg/iconslove.png"> Terima Kasih</a>
+                </div>
+
+                <div class="col list-group">
+                    <h5>Source</h5>
+                    <a href="https://www.themealdb.com/api.php" target="blank" class="list-group-item-action">
+                        <img src="/src/assets/svg/iconsdatabase.png">MealDB</a>
+                </div>
+
+                <div class="col list-group">
+                    <h5>Restoran</h5>
+                    <a href="#" class="list-group-item-action">
+                        <img src="/src/assets/svg/iconsmap.png">Lokasi </a>
+                </div>
+
+                <div class="col">
+                    <h5>Sosial Media</h5>
+                    <a href="https://www.instagram.com" target="blank" class="list-group-item-action">
+                        <img src="/src/assets/svg/iconsinstagram.svg"> </a>
+                    <a href="https://www.facebook.com" target="blank" class="list-group-item-action">
+                        <img src="/src/assets/svg/iconsfacebook.svg"> </a>
+                    <a href="https://www.twitter.com" target="blank" class="list-group-item-action">
+                        <img src="/src/assets/svg/iconstwitter.svg"> </a>
+                </div>
+            </div>
+
+            <hr>
+            <p class="font-weight-lighter ">
+                All trademarks are properties of <i>RumahJajan</i> 2020. &copy RumahJajan &TRADE; All rights reserved.
+            </p>
+
+            </hr>
+
+        </div>
+    </footer>
+</body>
+
+</html>
