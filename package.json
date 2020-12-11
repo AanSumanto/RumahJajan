@@ -30,9 +30,13 @@
   },
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "start": "node index.js"
   },
   "author": "Aan Sumanto",
   "license": "ISC",
-  "description": ""
+  "description": "",  
+  "engines": {
+    "node": "14.7"
+  }
 }
